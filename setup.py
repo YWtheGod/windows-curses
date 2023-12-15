@@ -35,7 +35,7 @@ Adds support for the standard Python `curses` module on Windows. Based on
 PDCurses curses implementation.
 
 The wheels are built from [this GitHub
-repository](https://github.com/zephyrproject-rtos/windows-curses).
+repository](https://github.com/YWtheGod/windows-curses).
 
 PDCurses is compiled with wide character support, meaning `get_wch()` is
 available. UTF-8 is forced as the encoding.
@@ -59,12 +59,12 @@ Please tell me if the `resize_term(0, 0)` hackery causes you any trouble.
 """[1:-1]
 
 setup(
-    name='windows-curses',
+    name='windows-curses-ywmod',
     version='2.3.2a2',
     description="Support for the standard curses module on Windows",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/zephyrproject-rtos/windows-curses",
+    url="https://github.com/YWtheGod/windows-curses",
     license='PSF2',
     ext_modules=[
         Extension('_curses',
@@ -88,7 +88,7 @@ setup(
                   libraries=libraries)
     ],
     project_urls={
-        "GitHub repository": "https://github.com/zephyrproject-rtos/windows-curses",
+        "GitHub repository": "https://github.com/YWtheGod/windows-curses",
     },
     classifiers = [
         'Development Status :: 4 - Beta',
