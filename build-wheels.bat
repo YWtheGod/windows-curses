@@ -44,7 +44,7 @@ echo Building wheel for Python %1
 
 :: Clean the setuptools build directory before building the wheel, to make sure
 :: we build from scratch
-py -%1 setup.py clean --all build_ext bdist_wheel
+python setup.py clean --all build_ext bdist_wheel
 if %errorlevel% neq 0 (
     echo Check that you have the 'wheel' module installed for Python %1 and are
     echo building with the right compiler
